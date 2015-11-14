@@ -1,10 +1,8 @@
-# Hunt-Ceryneian-hind
-
 #include <stdio.h>
 
 
 int main(void) {
-	// your code goes here
+	
 int n,t=1;
 printf("Enter the size of grid\n");
 scanf("%d",&n);
@@ -16,15 +14,15 @@ for(i=0;i<n;i++)
 {a[i][j]=count;
 count++;
 }}
-//r=rand() % count;
-r=13;
+r=rand() % count;
+
 for(i=0;i<n;i++)
 {for(j=0;j<n;j++)
 {if(a[i][j]==r)
 {x=i;
 y=j;
 }}}
-//printf("%d %d %d\n",r,x,y);
+
 while(t!=4)
 {printf("Enter guess %d ",t);
 scanf("%d",&guess);
@@ -62,7 +60,7 @@ break;
 break;
 }else
 printf("Oh no! The Ceryneian Hind escaped!\n");
-//printf("%d %d %d\n",guess,x1,y1);
+
 ++t;
 ++k;
 
@@ -71,9 +69,6 @@ printf("Oh no! The Ceryneian Hind escaped!\n");
 }
 else 
 printf("Invalid size of grid\n");
-/*for(i=0;i<3;i++)
-printf("%d",c[i]);*/
+
 	return 0;
 }
-
-
